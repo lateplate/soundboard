@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Soundboard</title>
+    <meta charset='UTF-8'>
+    <link href='stylesheets/styles.css' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Muli|Roboto+Slab' rel='stylesheet' type='text/css'>
+  </head>
+  <body>
+    <div class='container'>
+      <div class='content'>
+        <h1>
+          Soundboard
+        </h1>
+        <ul>
+          <li><img src='images/what.jpg' onclick='document.getElementById("what").play()'>What up with that?</li>
+          <li><img src='images/darth.jpg' onclick='document.getElementById("darth").play()'>Darth Vader</li>
+          <li><img src='images/lambert.jpg' onclick='document.getElementById("lambert").play()'>Lambert</li>
+        </ul>
+      </div>
+    </div>
+    <audio id="what"><source src="sounds/what.mp3" type="audio/mpeg"></audio>
+    <audio id="darth"><source src="sounds/darth.mp3" type="audio/mpeg"></audio>
+    <audio id="lambert"><source src="sounds/lambert.m4a" type="audio/mpeg"></audio>
+  </body>
+</html>
